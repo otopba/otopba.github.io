@@ -87790,6 +87790,7 @@ else r=s==="dark"?C.GT:C.vm}else r=C.GS
 O.n(C.d,"app","set theme mode: "+r.j(0))
 if(Z.Gf()&&b.b.b!=null){q=b.b.b
 p=new V.aP(q.c,q.b,q.a,q.d)}else p=C.O
+O.n(C.d,"app","set insets: "+p.j(0))
 return this.a.$3(a,new S.Cp(r,p),null)},
 $C:"$2",
 $R:2,
