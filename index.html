@@ -1,92 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--    &lt;!&ndash;-->
-<!--      If you are serving your web app in a path other than the root, change the-->
-<!--      href value below to reflect the base path you are serving from.-->
+    <base href="/">
 
-<!--      The path provided below has to start and end with a slash "/" in order for-->
-<!--      it to work correctly.-->
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
 
-<!--      Fore more details:-->
-<!--      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base-->
-<!--    &ndash;&gt;-->
-<!--    <base href="/">-->
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="client">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-<!--    <meta charset="UTF-8">-->
-<!--    <meta content="IE=Edge" http-equiv="X-UA-Compatible">-->
-<!--    <meta name="description" content="A new Flutter project.">-->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
 
-<!--    &lt;!&ndash; iOS meta tags & icons &ndash;&gt;-->
-<!--    <meta name="apple-mobile-web-app-capable" content="yes">-->
-<!--    <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-<!--    <meta name="apple-mobile-web-app-title" content="client">-->
-<!--    <link rel="apple-touch-icon" href="icons/Icon-192.png">-->
+    <title>client</title>
+    <link rel="manifest" href="manifest.json">
 
-<!--    &lt;!&ndash; Favicon &ndash;&gt;-->
-<!--    <link rel="icon" type="image/png" href="favicon.png"/>-->
-
-<!--    <title>client</title>-->
-<!--    <link rel="manifest" href="manifest.json">-->
-
-<!--    <meta name="google-signin-client_id"-->
-<!--          content="598438071060-ddn952qm2vgoj6bql1is5mnkkq5u7pv5.apps.googleusercontent.com">-->
-
+    <meta name="google-signin-client_id"
+          content="598438071060-ddn952qm2vgoj6bql1is5mnkkq5u7pv5.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
 </head>
-<body style="background-color:powderblue;">
-<!--<H1>TESTESTESTESTESTESTESTESTES</H1>-->
-
-<!--<script src="https://cdn.jsdelivr.net/npm/eruda@2.4.1/eruda.min.js"></script>-->
-<!--<script>eruda.init();</script>-->
-
-<!--<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>-->
-
-<!--&lt;!&ndash; The core Firebase JS SDK is always required and must be listed first &ndash;&gt;-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>-->
-
-<!--&lt;!&ndash; Add SDKs for Firebase products that you want to use-->
-<!--     https://firebase.google.com/docs/web/setup#available-libraries &ndash;&gt;-->
-<!--<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>-->
-
-<!--<script>-->
-<!--  var firebaseConfig = {-->
-<!--    apiKey: "AIzaSyAZqV4ktLzNIFA1ukmoCRDC59s3htRhZjA",-->
-<!--    authDomain: "gohere-257919.firebaseapp.com",-->
-<!--    databaseURL: "https://gohere-257919.firebaseio.com",-->
-<!--    projectId: "gohere-257919",-->
-<!--    storageBucket: "gohere-257919.appspot.com",-->
-<!--    messagingSenderId: "598438071060",-->
-<!--    appId: "1:598438071060:web:ed6f4c505b23d0e3e55001",-->
-<!--    measurementId: "G-CSJMS8V1MK"-->
-<!--  };-->
-<!--  firebase.initializeApp(firebaseConfig);-->
-<!--</script>-->
-
-<!--&lt;!&ndash;<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl03PDC9yLLbJ-3ROWMD4-jsMEeKskNpM"></script>&ndash;&gt;-->
-
-<!--&lt;!&ndash; This script installs service_worker.js to provide PWA functionality to-->
-<!--     application. For more information, see:-->
-<!--     https://developers.google.com/web/fundamentals/primers/service-workers &ndash;&gt;-->
-<!--<script>-->
-<!--    if ('serviceWorker' in navigator) {-->
-<!--      window.addEventListener('flutter-first-frame', function () {-->
-<!--        navigator.serviceWorker.register('flutter_service_worker.js?v=3228513957');-->
-<!--      });-->
-<!--    }-->
-<!--</script>-->
-
-<!--<script>-->
-<!--vkBridge.subscribe((event) => {-->
-<!--if(window.vkBridgeDartListener != null){-->
-<!--    window.vkBridgeDartListener(event.detail);-->
-<!--}-->
-<!--});-->
-<!--</script>-->
-
-<!--<script src="main.dart.js" type="application/javascript"></script>-->
-
+<body>
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-
 <script>
   vkBridge.send('VKWebAppInit');
 </script>
