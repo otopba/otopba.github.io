@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
+
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
+
+      Fore more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    -->
     <base href="/">
 
     <meta charset="UTF-8">
@@ -21,13 +31,9 @@
 
     <meta name="google-signin-client_id"
           content="598438071060-ddn952qm2vgoj6bql1is5mnkkq5u7pv5.apps.googleusercontent.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+
 </head>
 <body>
-
-<script src="https://cdn.jsdelivr.net/npm/eruda@2.4.1/eruda.min.js"></script>
-<script>eruda.init();</script>
-
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -59,7 +65,7 @@
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=796916717');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=750184870');
       });
     }
 </script>
