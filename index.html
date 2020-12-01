@@ -39,7 +39,7 @@
 <!--<script src="https://cdn.jsdelivr.net/npm/eruda@2.4.1/eruda.min.js"></script>-->
 <!--<script>eruda.init();</script>-->
 
-<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+<!--<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>-->
 
 <!--&lt;!&ndash; The core Firebase JS SDK is always required and must be listed first &ndash;&gt;-->
 <!--<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>-->
@@ -62,27 +62,33 @@
 <!--  firebase.initializeApp(firebaseConfig);-->
 <!--</script>-->
 
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl03PDC9yLLbJ-3ROWMD4-jsMEeKskNpM"></script>-->
+<!--&lt;!&ndash;<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl03PDC9yLLbJ-3ROWMD4-jsMEeKskNpM"></script>&ndash;&gt;-->
 
-<!-- This script installs service_worker.js to provide PWA functionality to
-     application. For more information, see:
-     https://developers.google.com/web/fundamentals/primers/service-workers -->
+<!--&lt;!&ndash; This script installs service_worker.js to provide PWA functionality to-->
+<!--     application. For more information, see:-->
+<!--     https://developers.google.com/web/fundamentals/primers/service-workers &ndash;&gt;-->
+<!--<script>-->
+<!--    if ('serviceWorker' in navigator) {-->
+<!--      window.addEventListener('flutter-first-frame', function () {-->
+<!--        navigator.serviceWorker.register('flutter_service_worker.js?v=3899349340');-->
+<!--      });-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script>-->
+<!--vkBridge.subscribe((event) => {-->
+<!--if(window.vkBridgeDartListener != null){-->
+<!--    window.vkBridgeDartListener(event.detail);-->
+<!--}-->
+<!--});-->
+<!--</script>-->
+
+<!--<script src="main.dart.js" type="application/javascript"></script>-->
+
+<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
 <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=719288562');
-      });
-    }
+  vkBridge.send('VKWebAppInit');
 </script>
-
-<script>
-vkBridge.subscribe((event) => {
-if(window.vkBridgeDartListener != null){
-    window.vkBridgeDartListener(event.detail);
-}
-});
-</script>
-
-<script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
